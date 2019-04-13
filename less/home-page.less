@@ -1,19 +1,17 @@
 // Home Content
-.space-top {
-  background-color: @nav-bg;
-  padding-bottom: 10px;
 
+.space-top {
+  background-color: @nav-border;
+  
   h1 {
     .center;
     padding-top: 20px;
     font-size: 3.5rem;
 
     @media @phone {
-      width: 80%;
-      margin: 0 auto;
       padding-bottom: 10px;
     }
-  }
+  } //h1 ends
 } //space-top ends
 
 .home {
@@ -26,12 +24,16 @@
 
     p {
       padding:0 15px;
+
+      @media @phone {
+        width: 100%;
+        font-size: 1.4rem;
+      }
     }
 
     img {
       @media @phone {
-        width: 80%;
-        height: auto;
+        width: 100%;
       }
     }
   
@@ -49,30 +51,26 @@
       height: 100%;
 
       @media @phone {
-        width: 80%;
-        margin: 0 auto;
-        }
+        width: 100%;
+        margin-top: 30px;
       }
+    }
 
-      .sky {
-        @media @phone {
-          display: none;
-        }
+    .sky {
+      @media @phone {
+        display: none;
+      }
+    }
 
-        .blast {
-          @media @phone {
-            .column;
-            flex-direction: column-reverse;
-          }
+    .launch {
+      @media @phone {
+        display: none;
+      }
     }
   }
 
   .visit-planets {
     padding: 15px;
-
-    @media @phone {
-      
-    }
 
     h3 {
       margin-top: 11px;
@@ -81,26 +79,34 @@
     p {
       margin-top: 13px;
     }
+
+    @media @phone {
+      margin-top: 20px;
+      font-size: 1.6rem;
+    }
   }
 
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    .center;
+    display: flex;
+    justify-content: center;
 
     @media @phone {
-      flex-wrap: wrap;
+      width: 100%;
       .column;
       flex-direction: column-reverse;
+      justify-content: space-evenly;
     }
 
     .walk-text {
       width: 50%;
 
       @media @phone {
-        flex-wrap: wrap;
+        width: 100%;
         .column;
+        flex-direction: column-reverse;
       }
 
       h3 {
@@ -109,15 +115,27 @@
 
       p {
         margin-bottom: 26px;
+
+        @media @phone {
+          width: 100%;
+          height: auto;
+          font-size: 1.6rem;
+        }
       }
 
       .btn {
         .btn-mixin;
 
-        &:hover {
-          background-color: @wild-sand;
-          color: @btn-bg-color;
+        @media @phone {
+          width: 320px;
+          height: 50px;
+          margin: 0 auto;
+          padding-top: 15px;
         }
+      }
+      @media @phone {
+        .column;
+        flex-direction: column-reverse;
       }
     }
 
@@ -126,21 +144,22 @@
       margin-left: 4%;
 
       @media @phone {
-        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
         .column;
         flex-direction: column-reverse;
       }
-      
+
       img {
         width: 100%;
         height: auto;
+        margin: 0 auto;
         border-radius: 10px;
 
         @media @phone {
-          flex-wrap: wrap;
+          height: auto;
           .column;
           flex-direction: column-reverse;
-        }
         }
       }
     }

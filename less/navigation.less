@@ -6,8 +6,11 @@ nav {
     margin-top: 20px;
 
     @media @phone {
-        width: 80%;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
         margin: 0 auto;
+        padding-bottom: 10px;
     }
 
 
@@ -16,15 +19,11 @@ nav {
         color: @main-font-color;
         font-size: 2rem;
         align-items: center;
-        margin-right: 30px;
+        margin-right: 25px;
 
         &:hover {
             text-decoration: underline;
             color: @main-font-color;
-
-        @media @phone {
-            justify-content: center;
-            }
         }
     } //a ends
 } // nav ends
