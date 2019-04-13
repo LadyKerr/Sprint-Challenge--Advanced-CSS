@@ -160,6 +160,23 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #5E6164;
+  font-size: 2rem;
+  align-items: center;
+  margin-right: 30px;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: #5E6164;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +186,16 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.space-top {
+  background-color: #F6F6F6;
+  padding-bottom: 10px;
+}
+.space-top h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 3.5rem;
 }
 .home .intro h2 {
   padding: 15px;

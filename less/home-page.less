@@ -1,4 +1,14 @@
 // Home Content
+.space-top {
+  background-color: @nav-bg;
+  padding-bottom: 10px;
+
+  h1 {
+    .center;
+    padding-top: 20px;
+    font-size: 3.5rem;
+  }
+} //space-top ends
 
 .home {
 
@@ -43,8 +53,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .center;
 
     .walk-text {
       width: 50%;
@@ -58,6 +67,7 @@
       }
 
       .btn {
+        .btn-mixin;
       }
     }
 
