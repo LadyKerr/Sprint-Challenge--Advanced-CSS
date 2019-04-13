@@ -5,6 +5,11 @@ nav {
     align-items: center;
     margin-top: 20px;
 
+    @media @phone {
+        width: 80%;
+        margin: 0 auto;
+    }
+
 
     a {
         text-decoration: none;
@@ -16,6 +21,10 @@ nav {
         &:hover {
             text-decoration: underline;
             color: @main-font-color;
+
+        @media @phone {
+            justify-content: center;
+            }
         }
     } //a ends
 } // nav ends
